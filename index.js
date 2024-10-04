@@ -20,8 +20,11 @@ const List = document.getElementById("list");
 
 //
 saveBtn.addEventListener("click" , function(){
+  if(inputEl.value !== ""){
   push( referenceinDB , inputEl.value) 
   inputEl.value = ""  
+}
+
 })
 
 
